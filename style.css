@@ -1,0 +1,118 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Main title styling */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Task input field styling */
+.input-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+/* Add button styling */
+.input-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+/* Task list styling */
+#list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual task item styling */
+#list li {
+    padding: 10px;
+    font-size: 1em;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for task delete button */
+#list li button {
+    font-size: 1.2em;
+    color: #888;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#list li button:hover {
+    color: #f44336;
+}
+/* Styling individual list items with checkboxes */
+#list li {
+    padding: 10px;
+    font-size: 1em;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Checkbox styling */
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Task text styling */
+.task-text {
+    flex: 1;
+}
